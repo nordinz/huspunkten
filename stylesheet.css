@@ -89,6 +89,72 @@ body, html{
   margin: auto;
   background-color: var(--four);
   
+  /*placera objekt i lager*/
+  z-index: 999;
+  
+  /*alltid top*/
+  top: 0;
+
+  /*läses från vänster till noll*/
+  left: 0;
+
+  transition: 0.3s ease-in-out;
+}
+
+.brand-title{
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: bold;
+  margin-left: 2vw;
+  
+}
+
+/*(hamburger dropdown)samma bg som navbaren*/
+.navbar-links{
+  height: 100%;
+  background-color: var(--four);
+
+}
+
+/*adjusting link settings*/
+.navbar-links ul{
+  display: flex;
+  margin: 2vh;
+  padding: 0;
+  margin-top: 3vh;
+  
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: var(--white);
+  padding: 0.5rem;
+  margin: 2vw;
+}
+
+.navbar-links li:hover{
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/*only vis in responsive mode, js fixar*/
+.toggle-button{
+  /*den kommer alltid hamna på samma ställe, vi måste därför 
+  använda top right bottom och left för att bestämma pos*/
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+
+  /*kan användas när som om man vill gömma för att 
+  kunna använda i responsive mode*/
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
 
 
 }

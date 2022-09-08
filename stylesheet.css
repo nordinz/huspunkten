@@ -7,7 +7,7 @@
 3. Buttons
 4. Navbar
 5. Heroesection
-6.
+6. Testimonial section
 7.
 */
 
@@ -271,3 +271,38 @@ body, html{
   }
 }
 /*validated*/
+
+/*6. testimonial*/
+/*grid*/
+.tgc{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  row-gap: 10vh;
+
+  /*grid area*/
+  grid-template-areas:
+  "comment1 comment1 comment2 comment2"
+  "comment3 comment3 comment4 comment4";
+}
+#comment1{
+  grid-area: comment1;
+  border-radius: 8px;
+  background-image: url(/img/family.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#comment2{
+  grid-area: comment2;
+  background-color: var(--two);
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  padding-top: 20px;
+  color: var(--white);
+
+
+}

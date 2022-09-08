@@ -27,3 +27,16 @@ box-sizing: border-box;
     --white: #ffffff;
 }
 /*Validerat*/
+
+body, html{
+  /*hela rutan blir hela vägen ut(all space streched)*/
+  margin: 0;
+  padding: 0;
+  /*No overflow*/
+  overflow-x: hidden;
+  height: 100%;
+  /*använd sparade färger med var*/
+  background-color: var(--five);
+
+}
+/*validerat*/
